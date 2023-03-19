@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <form action="/temperature" method="post" id="form">
+      <label for="login">Login:</label>
+      <input
+        type="text"
+        name="login"
+        id="login"
+        placeholder="login"
+        value="admin"
+      />
+      <label for="login">Password:</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="password"
+        autofocus
+      />
+      <label for="lon">Longitude:</label>
+      <input
+        type="number"
+        name="lon"
+        id="lon"
+        placeholder="lon"
+        min="-180"
+        max="180"
+        step="0.01"
+        value="-113.17"
+      />
+      <label for="lat">Latitude:</label>
+      <input
+        type="number"
+        name="lat"
+        id="lat"
+        placeholder="lat"
+        min="-90"
+        max="90"
+        step="0.01"
+        value="23.09"
+      />
+      <label for="freq">Frequency:</label>
+      <select name="freq" id="freq">
+        <option value="daily">Daily</option>
+        <option value="hourly">Hourly</option>
+        <option value="bad">Bad</option>
+      </select>
+      <input type="submit" value="SUBMIT" id="submit" />
+    </form>
+    <div id="data">
+      <div id="error"></div>
+      <div id="retrieved">
+        <div class="singleData">
+          Website
+          <div id="websites"></div>
+        </div>
+        <div class="singleData">
+          Averages
+          <div id="averages"></div>
+        </div>
+        <div class="singleData">
+          Extremes
+          <div id="extremes"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

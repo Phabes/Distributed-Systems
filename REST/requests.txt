@@ -1,0 +1,39 @@
+Dane do autoryzacji:
+Login: admin
+Hasło: admin
+
+klient -> serwer:
+https://weather-app-5y8o.onrender.com/temperature
+http://localhost:5000/temperature
+with body:
+{
+    "login": "admin",
+    "password": "admin",
+    "lon": -113.17,
+    "lat": 23.09,
+    "freq": "daily"
+}
+
+autorization fail:
+{
+    "login": "admin",
+    "password": "admi",
+    "lon": -113.17,
+    "lat": 23.09,
+    "freq": "daily"
+}
+
+bad request:
+{
+    "login": "admin",
+    "password": "admin",
+    "lon": -113.17,
+    "lat": 23.09,
+    "freq": "bad_parameter"
+}
+
+serwer -> serwisy:
+https://www.meteosource.com/api/v1/free/point?lat=23.09&lon=-113.17&sections=daily&timezone=UTC&language=en&units=metric&key=my9z0bvqhf9yewzq24c8mgscw9moidcazqn60agx
+https://api.oikolab.com/weather?param=temperature&start=2023-03-10&end=2023-03-16&lon=-113.17&lat=23.09&freq=D&api-key=069c63dc619e45c29034e1099f360250
+https://api.open-meteo.com/v1/forecast?longitude=-113.17&latitude=23.09&timezone=UTC&daily=temperature_2m_max
+https://api.open-meteo.com/v1/forecast?longitude=-113.17&latitude=23.09&timezone=UTC&hourly=temperature_2m
