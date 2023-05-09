@@ -1,0 +1,19 @@
+grpcurl -plaintext localhost:50050 list
+grpcurl -plaintext localhost:50050 describe
+grpcurl -plaintext localhost:50050 list calculator.AdvancedCalculator
+grpcurl -plaintext localhost:50050 describe calculator.AdvancedCalculator
+grpcurl -plaintext localhost:50050 describe calculator.ComplexArithmeticOpArguments
+
+sample
+list
+list_all
+triple 3 4 5
+triple 4 5 6
+Sum 4 5 6
+Avg 4 5 6
+Min 4 5 6
+Max 4 5 6
+prime To 15
+prime Amount 15
+fib To 15
+fib Amount 15

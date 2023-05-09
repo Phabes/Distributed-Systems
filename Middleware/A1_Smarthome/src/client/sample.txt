@@ -1,0 +1,12 @@
+t1 state
+t1 get
+t1 toggle
+t1 get
+h1 battery
+
+sp settings
+sp time
+sp intensity
+sp set 0 5
+sp set -1 5
+sp set 1 0

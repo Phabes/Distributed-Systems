@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "calculator";
+option java_outer_classname = "CalculatorProto";
+
+package calculator;
+
+message PythagoreanTripleCheckerArguments {
+  int32 a = 1;
+  int32 b = 2;
+  int32 c = 3;
+}
+
+message PythgoreanTripleCheckerResult {
+  bool result = 1;
+}
+
+enum OperationType {
+  Sum = 0;
+  Avg = 1;
+  Min = 2;
+  Max = 3;
+}
+
+message ComplexArithmeticOpArguments {
+  OperationType type = 1;
+  repeated double numbers = 2;
+}
+
+message ComplexArithmeticOpResult {
+  double result = 1;
+}
+
+service AdvancedCalculator {
+  rpc PythagoreanTriple (PythagoreanTripleCheckerArguments) returns (PythgoreanTripleCheckerResult) {}
+  rpc ComplexOperation (ComplexArithmeticOpArguments) returns (ComplexArithmeticOpResult) {}
+}
+

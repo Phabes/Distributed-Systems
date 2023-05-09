@@ -1,0 +1,17 @@
+InsideTemperatureSensor.Proxy=sensor/insideTemp : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+OutsideTemperatureSensor.Proxy=sensor/outsideTemp : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+GardenHumiditySensor.Proxy=sensor/gardenHum : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+PotHumiditySensor.Proxy=sensor/potHum : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+GardenSprinkler.Proxy=sprinkler/gardenSprinkler : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+KitchenLight.Proxy=light/kitchenLight : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+BedroomLight.Proxy=light/bedroomLight : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+ConnectedDevices.Proxy=other/connectedDevices : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+
+InsideTemperatureSensor2.Proxy=sensor/insideTemp : tcp -h 127.0.0.2 -p 10001 -z : udp -h 127.0.0.2 -p 10001 -z
+OutsideTemperatureSensor2.Proxy=sensor/outsideTemp : tcp -h 127.0.0.2 -p 10001 -z : udp -h 127.0.0.2 -p 10001 -z
+GardenHumiditySensor2.Proxy=sensor/gardenHum : tcp -h 127.0.0.2 -p 10001 -z : udp -h 127.0.0.2 -p 10001 -z
+PotHumiditySensor2.Proxy=sensor/potHum : tcp -h 127.0.0.2 -p 10001 -z : udp -h 127.0.0.2 -p 10001 -z
+GardenSprinkler2.Proxy=sprinkler/gardenSprinkler : tcp -h 127.0.0.2 -p 10001 -z : udp -h 127.0.0.2 -p 10001 -z
+KitchenLight2.Proxy=light/kitchenLight : tcp -h 127.0.0.2 -p 10001 -z : udp -h 127.0.0.2 -p 10001 -z
+BedroomLight2.Proxy=light/bedroomLight : tcp -h 127.0.0.2 -p 10001 -z : udp -h 127.0.0.2 -p 10001 -z
+ConnectedDevices2.Proxy=other/connectedDevices : tcp -h 127.0.0.2 -p 10001 -z : udp -h 127.0.0.2 -p 10001 -z

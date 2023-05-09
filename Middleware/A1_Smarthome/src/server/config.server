@@ -1,0 +1,5 @@
+SmarthomeAdapter1.Endpoints=tcp -h 127.0.0.2 -p 10000 -z -t 10000 : udp -h 127.0.0.2 -p 10000 -z
+SmarthomeAdapter1.ThreadPool.Size=10
+
+SmarthomeAdapter2.Endpoints=tcp -h 127.0.0.2 -p 10001 -z -t 10001 : udp -h 127.0.0.2 -p 10001 -z
+SmarthomeAdapter2.ThreadPool.Size=8

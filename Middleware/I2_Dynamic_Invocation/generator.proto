@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "generator";
+option java_outer_classname = "GeneratorProto";
+
+package generator;
+
+enum GenerationType {
+  To = 0;
+  Amount = 1;
+}
+
+message GeneratorArguments {
+  GenerationType type = 1;
+  int32 count = 2;
+}
+
+message GeneratorResults {
+  repeated int32 numbers = 1;
+}
+
+service NumbersGenerator {
+  rpc GeneratePrimeNumbers (GeneratorArguments) returns (GeneratorResults) {}
+  rpc GenerateFibonacciNumbers (GeneratorArguments) returns (GeneratorResults) {}
+}

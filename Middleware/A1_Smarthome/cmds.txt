@@ -1,0 +1,2 @@
+slice2java --output-dir generated slice/smarthome.ice
+slice2py --output-dir generated slice/smarthome.ice
