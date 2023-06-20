@@ -9,3 +9,5 @@
 &emsp;4. [Middleware. ICE/gRPC. SmartHome/Dynamic Invocation](https://github.com/Phabes/Distributed-Systems/tree/main/Middleware)
 
 &emsp;5. [RabbitMQ. Space Agencies](https://github.com/Phabes/Distributed-Systems/tree/main/Space_Agencies)
+
+&emsp;6. [Zookeeper. Watches](https://github.com/Phabes/Distributed-Systems/tree/main/Watches)
