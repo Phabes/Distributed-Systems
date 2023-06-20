@@ -6,4 +6,6 @@
 
 &emsp;3. [Actor Model. π Computing](https://github.com/Phabes/Distributed-Systems/tree/main/Ray)
 
-&emsp;3. [Middleware. ICE/gRPC. SmartHome/Dynamic Invocation](https://github.com/Phabes/Distributed-Systems/tree/main/Middleware)
+&emsp;4. [Middleware. ICE/gRPC. SmartHome/Dynamic Invocation](https://github.com/Phabes/Distributed-Systems/tree/main/Middleware)
+
+&emsp;5. [RabbitMQ. Space Agencies](https://github.com/Phabes/Distributed-Systems/tree/main/Space_Agencies)
